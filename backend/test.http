@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/reserve
+Content-Type: application/json
+
+{
+  "user_name": "admin",
+  "consultant_id": 1,
+  "reserve_date": "2025-05-15 15:00-16:00"
+}
