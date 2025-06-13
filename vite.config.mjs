@@ -32,5 +32,11 @@ export default defineConfig({
     alias: {
       '@': '/src'
     }
-  }
+  },
+  //服务地址
+  // server:{
+  //   port:5175,//自定义端口号
+  //   allowedHosts: ["df3a-240e-400-6e28-11a2-156f-6c25-309a-26bf.ngrok-free.app" +
+  //   ""]
+  // },
 }) 

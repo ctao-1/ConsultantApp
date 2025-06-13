@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/views/HomePage.vue'
 import ConsultantsListPage from '@/views/ConsultantsListPage.vue'
 import MainPage from '../main/MainPage.vue'
-import Mine from '../mine/Mine.vue'
+// import Mine from '../mine/Mine.vue'
 
 const routes = [
   {
@@ -40,13 +40,14 @@ const routes = [
         name: 'Reserve',
         component: () => import('@/views/ChatReserve.vue'),
       },
-       {
-          path: '/mine',
-          component: Mine,
-          // children: [
-          //   {path: '/consultantRegister', name: 'ConsultantRegister', component: () => import('@/mine/ConsultantRegister.vue')},
-          // ]
-        }
+      //  {
+      //     path: '/mine',
+      //     component: Mine,
+      //     // children: [
+      //     //   {path: '/consultantRegister', name: 'ConsultantRegister', component: () => import('@/mine/ConsultantRegister.vue')},
+      //     // ]
+      //   }
+
     ]
   },
 
@@ -58,11 +59,7 @@ const routes = [
   //   name: 'Consultants',
   //   component: () => import('@/views/ConsultantsListPage.vue') // 懒加载
   // },
-  // {
-  //   path: '/profile',
-  //   name: 'Profile',
-  //   component: () => import('@/views/ProfilePage.vue')
-  // }
+
 ]
 
 const router = createRouter({

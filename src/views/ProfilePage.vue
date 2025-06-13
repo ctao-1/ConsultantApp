@@ -1,6 +1,15 @@
 <template>
   <div class="profile-page p-4 md:p-8">
-    <h1 class="text-3xl font-bold mb-8 text-gray-700">个人中心</h1>
+    <div class="absolute top-4 right-4 flex gap-4">
+        <button class=" bg-white border-none outline-none text-gray-500 hover:text-teal-600 transition-colors">
+          <span class="i-carbon-wallet text-2xl mb-0.5">📞</span>
+          <span class="text-1xl">客服</span>
+        </button>
+        <button class=" bg-white border-none outline-none text-gray-500 hover:text-teal-600 transition-colors">
+          <span class="i-carbon-shopping-bag text-2xl mb-0.5">⚙️</span>
+          <span class="text-1xl">设置</span>
+        </button>
+      </div>
 
     <BaseCard shadow="xl" rounded="xl" class="user-info-section mb-8" padding="lg">
       <div v-if="userStore.isLoggedIn && userStore.userInfo" class="flex flex-col md:flex-row items-center">
@@ -11,7 +20,7 @@
         >
         <div class="text-center md:text-left">
           <h2 class="text-2xl md:text-3xl font-semibold text-teal-700">{{ userStore.userInfo.name }}</h2>
-          <p class="text-gray-500">{{ userStore.userInfo.email || '未设置邮箱' }}</p>
+          <p class="text-sm text-gray-500 mt-0.5">{{ userStore.userInfo.account || '未登录账号' }}</p>
           <BaseButton 
             label="编辑资料"
             variant="primary"

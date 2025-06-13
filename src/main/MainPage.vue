@@ -22,7 +22,7 @@
       </button>
       <button
         class="flex flex-col items-center justify-center flex-1 py-1 bg-white border-none outline-none text-gray-500 hover:text-teal-600 transition-colors"
-        @click="$router.push('/mine')"
+        @click="$router.push('/profile')"
       >
         <span class="i-carbon-user text-2xl mb-0.5">👤</span>
         <span class="text-xs">我的</span>
